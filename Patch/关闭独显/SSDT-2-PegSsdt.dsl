@@ -199,6 +199,7 @@ DefinitionBlock ("", "SSDT", 2, "PegSsd", "PegSsdt", 0x00001000)
 
         Method (_INI, 0, NotSerialized)  // _INI: Initialize
         {
+            
             If (PRES ())
             {
                 Store (LTRX, LTRS)
@@ -392,8 +393,8 @@ DefinitionBlock ("", "SSDT", 2, "PegSsd", "PegSsdt", 0x00001000)
             })
         }
 
-        PowerResource (PG00, 0x00, 0x0000)
-        {
+//        PowerResource (PG00, 0x00, 0x0000)
+//        {
             Name (_STA, One)  // _STA: Status
             Name (SCLK, 0x08)
             Method (_ON, 0, Serialized)  // _ON_: Power On
@@ -485,20 +486,20 @@ DefinitionBlock ("", "SSDT", 2, "PegSsd", "PegSsdt", 0x00001000)
                     Store (0x7F, P80H)
                 }
             }
-        }
+//        }
 
-        Name (_PR0, Package (0x01)  // _PR0: Power Resources for D0
-        {
-            PG00
-        })
-        Name (_PR2, Package (0x01)  // _PR2: Power Resources for D2
-        {
-            PG00
-        })
-        Name (_PR3, Package (0x01)  // _PR3: Power Resources for D3hot
-        {
-            PG00
-        })
+//        Name (_PR0, Package (0x01)  // _PR0: Power Resources for D0
+//        {
+//            PG00
+//        })
+//        Name (_PR2, Package (0x01)  // _PR2: Power Resources for D2
+//        {
+//            PG00
+//        })
+//        Name (_PR3, Package (0x01)  // _PR3: Power Resources for D3hot
+//        {
+//            PG00
+//        })
         Method (_DSW, 3, NotSerialized)  // _DSW: Device Sleep Wake
         {
             If (Arg1)
