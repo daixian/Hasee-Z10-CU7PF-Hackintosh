@@ -6,8 +6,7 @@
  * Disassembling to symbolic ASL+ operators
  *
  * Disassembly of iASLxZolEO.aml, Mon Jul 20 15:37:01 2020
- * 
- * 关闭一大堆GPU，如果存在就都关了。
+ *
  *
  * Original Table Header:
  *     Signature        "SSDT"
@@ -24,6 +23,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "NDGP", 0x00000000)
 {
     External (_SB_.PCI0.PEG0.PEGP._OFF, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.PCI0.PEG0.PEGP._ON_, MethodObj)    // 0 Arguments (from opcode)
+    External (_SB_.PCI0.PEG0.PEGP._PS3, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.PCI0.PEG2.PEGP._OFF, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.PCI0.PEG2.PEGP._ON_, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.PCI0.PEG_.VID_._PS0, MethodObj)    // 0 Arguments (from opcode)
@@ -137,6 +137,10 @@ DefinitionBlock ("", "SSDT", 2, "hack", "NDGP", 0x00000000)
             If (CondRefOf (\_SB.PCI0.PEG0.PEGP._OFF))
             {
                 \_SB.PCI0.PEG0.PEGP._OFF ()
+            }
+            If (CondRefOf (\_SB.PCI0.PEG0.PEGP._PS3))
+            {
+                \_SB.PCI0.PEG0.PEGP._PS3 ()
             }
 
             If (CondRefOf (\_SB.PCI0.PEGP.DGFX._OFF))
