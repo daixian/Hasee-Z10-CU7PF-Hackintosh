@@ -3,10 +3,9 @@
 */
 DefinitionBlock("", "SSDT", 2, "DRTNIA", "dGPU-Off", 0)
 {
-External(_SB.PCI0.PEG0.PEGP._OFF, MethodObj) // ACPI Path of dGPU
-External(_SB.PCI0.PEG0.NXHC._OFF, MethodObj) // ACPI Path of nv usb
-External(_SB.PCI0.PEG1.PEGP._OFF, MethodObj) // ACPI Path of dGPU
-External(_SB.PCI0.PEG2.PEGP._OFF, MethodObj) // ACPI Path of dGPU
+External(_SB.PCI0.PEG0._OFF, MethodObj) // ACPI Path of dGPU
+External(_SB.PCI0.PEG1._OFF, MethodObj) 
+External(_SB.PCI0.PEG2._OFF, MethodObj) 
 
     Device(RMD1)
     {
@@ -28,10 +27,9 @@ External(_SB.PCI0.PEG2.PEGP._OFF, MethodObj) // ACPI Path of dGPU
             If (_OSI ("Darwin"))
             {
                // disable discrete graphics (Nvidia/Radeon) if it is present
-               If (CondRefOf(\_SB.PCI0.PEG0.PEGP._OFF)) { \_SB.PCI0.PEG0.PEGP._OFF() }
-               If (CondRefOf(\_SB.PCI0.PEG0.NXHC._OFF)) { \_SB.PCI0.PEG0.NXHC._OFF() }
-               If (CondRefOf(\_SB.PCI0.PEG1.PEGP._OFF)) { \_SB.PCI0.PEG1.PEGP._OFF() }
-               If (CondRefOf(\_SB.PCI0.PEG2.PEGP._OFF)) { \_SB.PCI0.PEG2.PEGP._OFF() }
+               If (CondRefOf(\_SB.PCI0.PEG0._OFF)) { \_SB.PCI0.PEG0._OFF() }
+               If (CondRefOf(\_SB.PCI0.PEG1._OFF)) { \_SB.PCI0.PEG1._OFF() }
+               If (CondRefOf(\_SB.PCI0.PEG2._OFF)) { \_SB.PCI0.PEG2._OFF() }
             }
             Else
             {
