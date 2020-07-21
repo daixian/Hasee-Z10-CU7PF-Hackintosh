@@ -10,3 +10,6 @@
 > |限制|数|0|
 > |找|数据|5f4f5349|
 > |更换|数据|584f5349|
+
+* 这里有一个类似的看看
+https://github.com/CryptoNeverSleeps/DELL-XPS-7590-OLED
