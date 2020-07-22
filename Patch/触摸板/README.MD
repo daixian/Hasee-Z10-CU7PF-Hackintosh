@@ -13,3 +13,28 @@
 
 * 这里有一个类似的看看
 https://github.com/CryptoNeverSleeps/DELL-XPS-7590-OLED
+它的补丁可能没什么意义，z10的触摸板的中断应该是Advanced Programmable Interrupt Controller (APIC)高级可编程中断控制器
+```
+// Enable TPD0 GPIO pinning
+// Patch: Rename USTP to One 
+// Find: VVNUUBA=
+// Replace: AaOjoxA=
+// References:
+// [1] https://github.com/xxxzc/xps15-9550-macos/issues/26#issuecomment-546838295
+// [2] https://github.com/daliansky/OC-little/tree/master/09-OCI2C-TPXX%E8%A1%A5%E4%B8%81%E6%96%B9%E6%B3%95
+// [3] https://github.com/alexandred/VoodooI2C/blob/master/Documentation/GPIO%20Pinning.md
+DefinitionBlock ("", "SSDT", 2, "hack", "TPDX", 0x00000000)
+{
+    External (TPDM, FieldUnitObj)
+    External (TPLT, FieldUnitObj)
+
+    Scope (\)
+    {
+        If (_OSI ("Darwin"))
+        {
+//            TPLT = Zero // disable touchscreen
+            TPDM = Zero // enable GPIO pinning for TPD0
+        }
+    }
+}
+```
