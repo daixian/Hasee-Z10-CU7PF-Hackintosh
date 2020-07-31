@@ -1,5 +1,6 @@
 # 神舟战神Z10-CU7PF的Hackintosh (10.15.6)
 ## 适用范围：
+
 |型号 |CPU|准系统名称|
 |-|-|-|
 |战神 Z10-CU7PF|I7-10750H|PB50DF2|
@@ -8,6 +9,7 @@
 |战神 Z8-CU7PK|I7-10750H|PB50DDS|
 |战神 Z8-CU7PRO|I7-10750H|PB50DDS|
 |战神 Z8-CU7PS|I7-10750H|PB50DDS|
+
 表中的这些型号是因为，除了Z10-CU7PF，我估计一些使用蓝天PB50的10代CPU的机器如神舟Z8,Z9的机器可能也可以使用。
 [准系统查询页面](http://kfgl.hasee.com/lookup/book/bblist.asp)
 
