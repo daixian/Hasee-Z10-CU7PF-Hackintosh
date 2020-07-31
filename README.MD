@@ -1,9 +1,22 @@
 # 神舟战神Z10-CU7PF的Hackintosh (10.15.6)
+## 适用范围：
+|型号 |CPU|准系统名称|
+|-|-|-|
+|战神 Z10-CU7PF|I7-10750H|PB50DF2|
+|战神 Z9-CU7PS|I7-10750H|PB50DF1|
+|战神 Z9-CU7PK|I7-10750H|PB50DF1|
+|战神 Z8-CU7PK|I7-10750H|PB50DDS|
+|战神 Z8-CU7PRO|I7-10750H|PB50DDS|
+|战神 Z8-CU7PS|I7-10750H|PB50DDS|
+表中的这些型号是因为，除了Z10-CU7PF，我估计一些使用蓝天PB50的10代CPU的机器如神舟Z8,Z9的机器可能也可以使用。
+[准系统查询页面](http://kfgl.hasee.com/lookup/book/bblist.asp)
+
 ## 机器配置：
-* CPU:i7-10750H
-* 核显:UHD630
-* 独显:RTX2070s
-* 屏幕:4k AMOLED
+* CPU：I7-10750H
+* 模具：蓝天 PB50DF2
+* 核显：UHD630
+* 独显：RTX2070s
+* 屏幕：4k AMOLED
 
 目前基本搞一段落了，各项功能基本全部完成。剩下OLED屏幕相关的问题基本没办法。目前机器发热完美，风扇基本不转。
 这台机子的BIOS很新，很多神棍说法在这台机子上都是不适用的。这是一个扎扎实实在理解的基础上完成的EFI。
