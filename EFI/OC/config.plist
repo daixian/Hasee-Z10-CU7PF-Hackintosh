@@ -987,6 +987,82 @@
 	<dict>
 		<key>Automatic</key>
 		<true/>
+		<key>Generic</key>
+		<dict>
+			<key>AdviseWindows</key>
+			<false/>
+			<key>MLB</key>
+			<string>C02027303QX00001M</string>
+			<key>ROM</key>
+			<data>hePu4g89</data>
+			<key>SpoofVendor</key>
+			<true/>
+			<key>SystemProductName</key>
+			<string>MacBookPro16,2</string>
+			<key>SystemSerialNumber</key>
+			<string>C02D10JGML7H</string>
+			<key>SystemUUID</key>
+			<string>7916877F-9CA3-4E03-A2B7-1F621FE20F3D</string>
+		</dict>
+		<key>SMBIOS</key>
+		<dict>
+			<key>BIOSReleaseDate</key>
+			<string>05/13/2020</string>
+			<key>BIOSVendor</key>
+			<string></string>
+			<key>BIOSVersion</key>
+			<string>1037.120.87.0.0</string>
+			<key>BoardAssetTag</key>
+			<string></string>
+			<key>BoardLocationInChassis</key>
+			<string>Part Component</string>
+			<key>BoardManufacturer</key>
+			<string></string>
+			<key>BoardProduct</key>
+			<string>Mac-5F9802EFE386AA28</string>
+			<key>BoardSerialNumber</key>
+			<string>C02027303QX00001M</string>
+			<key>BoardType</key>
+			<integer>10</integer>
+			<key>BoardVersion</key>
+			<string>1.0</string>
+			<key>ChassisAssetTag</key>
+			<string>MacBook-Aluminum</string>
+			<key>ChassisManufacturer</key>
+			<string></string>
+			<key>ChassisSerialNumber</key>
+			<string>C02D10JGML7H</string>
+			<key>ChassisType</key>
+			<integer>9</integer>
+			<key>ChassisVersion</key>
+			<string>Mac-5F9802EFE386AA28</string>
+			<key>FirmwareFeatures</key>
+			<data>ZvCv/QAAAAA=</data>
+			<key>FirmwareFeaturesMask</key>
+			<data>f////wAAAAA=</data>
+			<key>MemoryFormFactor</key>
+			<integer>0</integer>
+			<key>PlatformFeature</key>
+			<integer>50</integer>
+			<key>ProcessorType</key>
+			<integer>0</integer>
+			<key>SmcVersion</key>
+			<data></data>
+			<key>SystemFamily</key>
+			<string>MacBook Pro</string>
+			<key>SystemManufacturer</key>
+			<string></string>
+			<key>SystemProductName</key>
+			<string>MacBookPro16,2</string>
+			<key>SystemSKUNumber</key>
+			<string>Mac-5F9802EFE386AA28</string>
+			<key>SystemSerialNumber</key>
+			<string>C02D10JGML7H</string>
+			<key>SystemUUID</key>
+			<string>7916877F-9CA3-4E03-A2B7-1F621FE20F3D</string>
+			<key>SystemVersion</key>
+			<string>1.0</string>
+		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
 		<key>UpdateNVRAM</key>
