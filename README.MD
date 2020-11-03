@@ -1,5 +1,5 @@
 # 神舟战神Z10-CU7PF的Hackintosh (Catalina 10.15.7)
-![桌面](https://home.xuexuesoft.com:8010/github/image/z10/screen.png)
+![桌面](https://user-images.githubusercontent.com/15939998/97988172-863a9780-1e17-11eb-8ce8-6910a042187b.png)
 
 ## 适用范围：
 | 型号           | CPU       | 准系统名称 |
